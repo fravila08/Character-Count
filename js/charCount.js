@@ -1,9 +1,14 @@
-//exports.
+// exports.
 const charCount = function(x) {
     string=x.replace(/\s/g, "")
-    console.log(string)
-    
+    let splitStr=[...string]
+    // console.log(splitStr)
+    // console.log(string)
+    myObject={}
+    splitStr.forEach(function (x) {myObject[x] = ((myObject[x] || 0) + 1); });
+    return(myObject)    
 };
+
     
 
-charCount("an apple a day will keep the doctor away")
+console.log(charCount("aaabbc"))
