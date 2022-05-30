@@ -1,1 +1,1 @@
-console.log(sortedArr)
+var char = require("./charCount");
